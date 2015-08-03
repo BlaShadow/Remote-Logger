@@ -1,0 +1,24 @@
+{
+  "name": "remote-logger",
+  "version": "0.0.0",
+  "description": "Send notifications messages to every client ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logger",
+    "remote",
+    "socket.io"
+  ],
+  "author": "Luis Romero <blackzerogamer@gmail.com> (http://nightdeveloper.net/)",
+  "license": "BSD",
+  "dependencies": {
+    "socket.io": "~1.3.6",
+    "debug": "~2.2.0"
+  },
+  "devDependencies": {
+    "express": "~4.13.3",
+    "nodemon": "~1.4.0"
+  }
+}
