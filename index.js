@@ -22,6 +22,9 @@ module.exports = function(app){
      * **/
     var emitLog = function(data){
         
+        /** Set date when the error is emited **/
+        data.date = new Date().toISOString();
+        
         io.emit("log", data);
         
         io.emit("log".data.log_type, data);
@@ -45,7 +48,8 @@ module.exports = function(app){
         return {
             message: message,
             log_type: type,
-            extra: extraArguments
+            extra: extraArguments,
+            date: null
         };
     };
     
