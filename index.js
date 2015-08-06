@@ -12,7 +12,7 @@ module.exports = function(app){
     });
     
     io.on('disconnect',function(){
-       log('Client left'); 
+        log('Client left'); 
     });
     
     /*
@@ -27,11 +27,12 @@ module.exports = function(app){
         
         io.emit("log", data);
         
-        io.emit("log".data.log_type, data);
+        io.emit("log" + data.log_type, data);
     };
      
     /*
      * Log events using debug and web sockets.
+     * @param data - Option Object
      *
      * **/
     var log = function(data){
@@ -42,6 +43,9 @@ module.exports = function(app){
     
     /* 
      * Option log builder
+     * @param message
+     * @param log-type
+     * @param extraArgument (Object)
      *
      * **/
     var optionsBuilder = function(message, type, extraArguments){
