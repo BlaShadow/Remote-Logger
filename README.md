@@ -7,7 +7,14 @@ Install
     npm install git@github.com:BlaShadow/Remote-Logger.git
     
 
-How To Use with express
+How to use
+--
+if you're using Socket.io on your project just initialize the library with the instance of `io`.
+
+    var io = ..
+    var log = require('Remote-Logger')(io);
+
+With express
 --
 Like any `socketIO` app  
 
@@ -18,6 +25,8 @@ Like any `socketIO` app
     log.info("Hello world");
     
     log.error("it's failling dude!!!");
+    
+    log.fatal('this is bad!!',{ some:"data" });
     
 How to use on client side
 --
