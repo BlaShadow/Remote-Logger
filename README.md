@@ -1,6 +1,6 @@
 # Remote-Logger
 
-Remote-Logger is a tiny library for logging error and info on ours nodejs aplications, its use DEBUG library for logging into console and socketIO for send those logs message thrown web socket to others users.
+Remote-Logger is a tiny library for logging error and info on ours nodejs aplications, its use `DEBUG` library for logging into console and `socketIO` for send those logs message thrown web socket to others users.
 
 Install
 --
