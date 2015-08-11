@@ -43,9 +43,9 @@ module.exports = function(instance){
         /** Set date when the error is emited **/
         data.date = new Date().toGMTString();
         
-        io.emit("log", data);
+        io.volatile.emit("log", data);
         
-        io.emit("log-" + data.log_type, data);
+        io.volatile.emit("log-" + data.log_type, data);
     };
      
     /*
