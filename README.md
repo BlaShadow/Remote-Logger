@@ -41,3 +41,15 @@ and those events too
 * log-error
 * log-debug
 * log-faltal
+
+Clients
+--
+
+There's already clients to consume this library after you implement on your nodejs project.
+
+**Android Client**
+
+[PlayStore] (https://play.google.com/store/apps/details?id=org.shadow.remoteloggerclient)
+
+[GitHub] (https://github.com/BlaShadow/Remote-Logger-Android)
+
